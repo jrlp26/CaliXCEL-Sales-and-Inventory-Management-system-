@@ -5,4 +5,23 @@ This system is intended for authorized business staff, including administrators 
 
 The system addresses the difficulty of managing business records and workflows across separate files or manual processes. It helps staff prepare and track quotations, convert approved and signed quotations into projects, monitor project status and material movements, create invoices using the business’s payment milestones, record customer payments, and review operational or financial information according to the permissions. By linking these records, CALIX helps staff follow each job from the initial customer quotation through project work and payment collection.
 
+IMPOTANT: After installing the file you must unzip it first
+# CALIX Local Setup
+
+## Install
+
+1. Install XAMPP and extract the CALIX_MANAGEMENT_SYSTEM folder into `C:\xampp\htdocs\`.
+
+2. In XAMPP Control Panel, start Apache** and MySQL.
+
+3. Open `http://localhost/phpmyadmin/` and create a new database named `calix_db` with `utf8mb4_general_ci`.
+
+4. Select `calix_db`, choose Import, select `CALIX_MANAGEMENT_SYSTEM\Database\calix_db.sql`, and import it. Import only into a new, empty database.
+
+5. Open the login page: `http://localhost/CALIX_MANAGEMENT_SYSTEM/System/HTML/LoginPage.html`
+
+6. Sign in with Username: `admin_user` and Password: `admin123`.
+
+7. Open Projects & Quotations: `http://localhost/CALIX_MANAGEMENT_SYSTEM/Modules/Quotation/HTML/Projects.html?check=202610192251`
+
 
